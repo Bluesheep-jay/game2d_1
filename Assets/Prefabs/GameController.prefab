@@ -44,6 +44,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d7804ab2bb36e4194c0069747519d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 6752560558990891743, guid: f741491a16495aa4fa024ecc2e8bceb0, type: 3}
+  enemy: {fileID: 0}
   spawnTime: 2
   level: 0
+  PlayerPrefabs:
+  - {fileID: 68613745197463446, guid: 76ab90ce4f61d9348945dbda2c98f9cb, type: 3}
+  - {fileID: 4981909414115638071, guid: 0cbf4b2828468b6428b4b2aded0c837f, type: 3}
+  nameScene: level_02
+  delaySecond: 2

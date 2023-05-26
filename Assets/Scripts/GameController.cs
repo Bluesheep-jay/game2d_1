@@ -14,11 +14,18 @@ public class GameController : MonoBehaviour
     public int level;
     Player levelUp;
 
+    // choose characters;
+    public GameObject[] PlayerPrefabs;
+    int characterIndex;
+
     public string nameScene = "level_02";
     public float delaySecond = 2;
     // Start is called before the first frame update
     void Start()
     {
+        characterIndex = PlayerPrefs.GetInt("SelectedCharacter", 0);
+        Instantiate(PlayerPrefabs[characterIndex], new Vector2(0, -3), Quaternion.identity );  
+
         m_spawnTime = 0;
         m_ui = FindObjectOfType<UImanage>();
         m_ui.SetScoreText("Score: " + m_score);
@@ -80,7 +87,6 @@ public class GameController : MonoBehaviour
 
     IEnumerable LoadAfterDelay()
     {
-        Debug.Log("laod");
         yield return new WaitForSeconds(delaySecond);
     }
     
