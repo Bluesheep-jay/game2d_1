@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 995206834109773174}
   - component: {fileID: 995206834109773169}
+  - component: {fileID: 2119539656526599320}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -44,11 +45,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7d7804ab2bb36e4194c0069747519d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
+  enemy: {fileID: 6752560558990891743, guid: f741491a16495aa4fa024ecc2e8bceb0, type: 3}
   spawnTime: 2
   level: 0
   PlayerPrefabs:
-  - {fileID: 68613745197463446, guid: 76ab90ce4f61d9348945dbda2c98f9cb, type: 3}
   - {fileID: 4981909414115638071, guid: 0cbf4b2828468b6428b4b2aded0c837f, type: 3}
+  - {fileID: 68613745197463446, guid: 76ab90ce4f61d9348945dbda2c98f9cb, type: 3}
   nameScene: level_02
   delaySecond: 2
+--- !u!114 &2119539656526599320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995206834109773168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 669017f7ef48b88469abf554f763655f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameScene: level_02
+  delayBeforeLoading: 3
+  enemy: {fileID: 6752560558990891743, guid: f741491a16495aa4fa024ecc2e8bceb0, type: 3}

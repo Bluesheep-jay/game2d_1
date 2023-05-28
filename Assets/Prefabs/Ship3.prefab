@@ -173,12 +173,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  bullet: {fileID: 7995679285913992731, guid: c349f501659bfd246a3906a3e16415e9, type: 3}
+  bullet: {fileID: 2482016985485079633, guid: fcd13039fc830a7459924ef56de75683, type: 3}
   shootingPoint: {fileID: 1321055667062290635}
   aus: {fileID: 0}
   shootingSound: {fileID: 8300000, guid: 394a8a1e21fe28a40bbac3fea1712910, type: 3}
   explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
-  lives: 3
+  lives: 6
   bigExplosion: {fileID: 139366, guid: 86ebb5410d69cf141bee1a3f130eb61f, type: 3}
 --- !u!1 &8374026307796329362
 GameObject:

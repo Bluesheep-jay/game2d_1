@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     float count = 0;
     public GameObject explosion;
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
         m_rb = GetComponent<Rigidbody2D>();
         m_gc = FindObjectOfType<GameController>();
@@ -20,10 +20,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         m_rb.velocity = Vector2.down * moveSpeed;
-        if(m_gc.level == 2)
-        {
-
-        }
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,7 +29,7 @@ public class Enemy : MonoBehaviour
             //m_gc.SetGameOverState() ;
             Destroy(gameObject);
         }
-        if (collision.CompareTag("bullet")){
+        if (collision.CompareTag("TankBullet")){
             count++;
 
             if (count == 2)
@@ -46,6 +43,19 @@ public class Enemy : MonoBehaviour
                 Destroy(gameObject);
                 count = 0;
             }
+
+        }
+        if (collision.CompareTag("AssassinBullet"))
+        {
+            
+                if (explosion)
+                {
+                    Instantiate(explosion, collision.transform.position, Quaternion.identity);
+                }
+                m_gc.ScoreIncre();
+
+                Destroy(gameObject);
+           
 
         }
     }

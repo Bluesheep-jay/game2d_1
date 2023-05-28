@@ -11,8 +11,6 @@ public class GameController : MonoBehaviour
     int m_score;
     bool m_isGameOver;
     UImanage m_ui;
-    public int level;
-    Player levelUp;
 
     // choose characters;
     public GameObject[] PlayerPrefabs;
@@ -29,7 +27,7 @@ public class GameController : MonoBehaviour
         m_spawnTime = 0;
         m_ui = FindObjectOfType<UImanage>();
         m_ui.SetScoreText("Score: " + m_score);
-        levelUp = FindObjectOfType<Player>();
+
     }
 
     void Update()
@@ -41,18 +39,8 @@ public class GameController : MonoBehaviour
             return;
         }
         m_spawnTime -= Time.deltaTime;
-        // level up;
-        if(m_score >= 10)
-            spawnTime = 1.4f;      
-        if(m_score >= 15)
-            spawnTime = 1.2f;   
-        if(m_score >= 20) {
-            level = 2;
-            spawnTime = 1f;
-        }
 
-        if (m_score >= 30)
-            spawnTime = 0.8f;
+       
 
         if (m_spawnTime <=0)
         {
@@ -85,10 +73,7 @@ public class GameController : MonoBehaviour
         return m_score;
     }
 
-    IEnumerable LoadAfterDelay()
-    {
-        yield return new WaitForSeconds(delaySecond);
-    }
+ 
     
     public void ScoreIncre()
     {
@@ -96,13 +81,8 @@ public class GameController : MonoBehaviour
         {
             return;
         }
-        m_score++;
-        if(m_score == 20)
-        {
-            SceneManager.LoadScene(nameScene);
-
-        }
-
+        m_score += 10;
+        
         m_ui.SetScoreText("Score: " + m_score);
     }
        public void SetGameOverState()

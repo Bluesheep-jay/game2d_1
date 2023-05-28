@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public AudioSource aus;
     public AudioClip shootingSound;
     public GameObject explosion;
-    public int lives = 3;
+    public int lives;
     public GameObject bigExplosion;
     Vector3 pos;
     Pause pauseObj;
@@ -23,7 +23,11 @@ public class Player : MonoBehaviour
     {
         m_ui = FindObjectOfType<UImanage>();
         m_gc = FindObjectOfType<GameController>();
-        pauseObj = FindObjectOfType<Pause>();   
+        pauseObj = FindObjectOfType<Pause>();
+        m_ui.ShowPlayerLives("" + lives);
+        aus = FindObjectOfType<AudioSource>();
+
+
     }
 
     void Update()
@@ -37,17 +41,6 @@ public class Player : MonoBehaviour
             return;
         }
 
-        /*move with arrow
-
-        float xDir = Input.GetAxisRaw("Horizontal");
-        if ((xDir < 0 && transform.position.x <= -10) || (xDir > 0 && transform.position.x >= 10))
-        { 
-            return;
-        }
-        transform.position += Vector3.right * moveSpeed* xDir* Time.deltaTime;
-    */
-
-        //move with mouse
         pos = Input.mousePosition;
         pos.z = moveSpeed;
         transform.position = Camera.main.ScreenToWorldPoint(pos);
@@ -71,22 +64,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    /*
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-        if (collision.CompareTag("Enemy"))
-        {
-           if (explosion)
-            {
-                Instantiate(explosion, collision.transform.position, Quaternion.identity);
-            }
-            m_gc.SetGameOverState();
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
-        }
-    }
-*/
+   
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
