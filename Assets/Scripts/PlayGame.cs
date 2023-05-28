@@ -13,7 +13,7 @@ public class PlayGame : MonoBehaviour
     // Update is called once per frame
     public void playGame()
     {
-        SceneManager.LoadScene("level_01");
+        SceneManager.LoadScene("Level Selection");
     }
     
 }
