@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Level1_control : MonoBehaviour
 {
+    public GameObject pause4Continue;
     GameController m_gc;
     public GameObject enemy;
     LevelLoader m_load;
@@ -17,13 +18,20 @@ public class Level1_control : MonoBehaviour
 
     void Update()
     {
-        if (m_gc.GetScore() >= 50)
+        if (m_gc.GetScore() >= 10)
         {
-            Debug.Log("chuyen");
             DestroyImmediate(GameObject.Find("Enemy(Clone)"));
+               
+            pause4Continue.SetActive(true);
 
-            m_load.LoadNextLevel("level_02");
+            //m_load.LoadNextLevel("level_02");
         }
+    }
+
+    public void runLevelLoader()
+    {
+        m_load.LoadNextLevel("level_02");
+
     }
 
 }

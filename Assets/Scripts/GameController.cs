@@ -16,8 +16,6 @@ public class GameController : MonoBehaviour
     public GameObject[] PlayerPrefabs;
     int characterIndex;
 
-    public string nameScene = "level_02";
-    public float delaySecond = 2;
     // Start is called before the first frame update
     void Start()
     {
