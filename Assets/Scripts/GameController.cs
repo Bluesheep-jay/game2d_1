@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
 
     public void SpawnEnemy()
     {
-        float randXpos = Random.Range(-9f, 9f);
+        float randXpos = Random.Range(-8f, 8f);
         Vector2 spawnPos = new Vector2(randXpos, 6.5f);
         if (enemy)
         {  

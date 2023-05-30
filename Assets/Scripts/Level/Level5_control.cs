@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Level1_control : MonoBehaviour
+public class Level5_control : MonoBehaviour
 {
     public GameObject pause4Continue;
     GameController m_gc;
-    public GameObject enemy;
     LevelLoader m_load;
     // Start is called before the first frame update
     void Start()
@@ -18,10 +16,12 @@ public class Level1_control : MonoBehaviour
 
     void Update()
     {
-        if (m_gc.GetScore() >= 10)
+
+        if (m_gc.GetScore() >= 300)
         {
-            DestroyImmediate(GameObject.Find("Enemy(Clone)"));
-               
+            DestroyImmediate(GameObject.Find("Enemy5(Clone)"));
+            DestroyImmediate(GameObject.FindWithTag("EnemyProjectile"));
+
             pause4Continue.SetActive(true);
 
             //m_load.LoadNextLevel("level_02");
@@ -30,8 +30,7 @@ public class Level1_control : MonoBehaviour
 
     public void runLevelLoader()
     {
-        m_load.LoadNextLevel("level_02");
+        m_load.LoadNextLevel("level_06");
 
     }
-
 }

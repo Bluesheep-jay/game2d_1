@@ -19,7 +19,7 @@ public class CharacterSelect : MonoBehaviour
         skins[selectedCharacter].SetActive(true);
     }
     public void ChangeNext()
-    {
+    {   
         skins[selectedCharacter].SetActive(false);
         selectedCharacter++;
         if(selectedCharacter == skins.Length)

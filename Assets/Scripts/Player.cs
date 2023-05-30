@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -43,7 +44,7 @@ public class Player : MonoBehaviour
 
         pos = Input.mousePosition;
         pos.z = moveSpeed;
-        transform.position = Camera.main.ScreenToWorldPoint(pos);
+        transform.position = Camera.main.ScreenToWorldPoint(pos);   
 
         if (Input.GetKeyDown(KeyCode.Space) || (Input.GetKeyDown(KeyCode.Mouse0)))
         {
@@ -64,7 +65,10 @@ public class Player : MonoBehaviour
         }
     }
 
-   
+    public void livesDecre()
+    {
+        lives -= 1;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))

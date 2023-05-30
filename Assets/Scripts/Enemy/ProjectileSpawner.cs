@@ -20,7 +20,7 @@ public class ProjectileSpawner : MonoBehaviour
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
         {
-            Instantiate(enemyProjectile, transform.position, Quaternion.identity);
+            Instantiate(enemyProjectile, transform.position, Quaternion.identity); 
             spawnTimer = Random.Range(spawnMin, spawnMax);
 
         }
