@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour
     int m_score;
     bool m_isGameOver;
     UImanage m_ui;
+    public string nameScene;
 
     // choose characters;
     public GameObject[] PlayerPrefabs;
@@ -38,7 +39,14 @@ public class GameController : MonoBehaviour
         }
         m_spawnTime -= Time.deltaTime;
 
-       
+       if(m_score > 50 && nameScene == "level_05")
+        {
+            spawnTime = 0.6f;
+        }
+        if (m_score > 150 && nameScene == "level_05")
+        {
+            spawnTime = 0.4f;
+        }
 
         if (m_spawnTime <=0)
         {
@@ -60,7 +68,7 @@ public class GameController : MonoBehaviour
 
     public void Replay()
     {
-        SceneManager.LoadScene("level_01");
+        SceneManager.LoadScene(nameScene);
     }
     public void SetScore(int val)
     {

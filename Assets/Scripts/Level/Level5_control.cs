@@ -21,10 +21,10 @@ public class Level5_control : MonoBehaviour
         {
             DestroyImmediate(GameObject.Find("Enemy5(Clone)"));
             DestroyImmediate(GameObject.FindWithTag("EnemyProjectile"));
+            
+            PlayerPrefs.SetInt("levelPassed", 5);
 
             pause4Continue.SetActive(true);
-
-            //m_load.LoadNextLevel("level_02");
         }
     }
 

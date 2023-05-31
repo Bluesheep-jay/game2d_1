@@ -21,10 +21,9 @@ public class Level3_control : MonoBehaviour
             DestroyImmediate(GameObject.Find("Couple Enemy(Clone)"));
             DestroyImmediate(GameObject.Find("Enemy3_2(Clone)"));
 
+            PlayerPrefs.SetInt("levelPassed", 3);
 
             pause4Continue.SetActive(true);
-
-            //m_load.LoadNextLevel("level_02");
         }
     }
 

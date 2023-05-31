@@ -668,6 +668,10 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 995206834109773169, guid: d7a9bb9391ed8fa40ad122d6cd7b979d, type: 3}
+      propertyPath: nameScene
+      value: level_04
+      objectReference: {fileID: 0}
     - target: {fileID: 995206834109773174, guid: d7a9bb9391ed8fa40ad122d6cd7b979d, type: 3}
       propertyPath: m_RootOrder
       value: 2

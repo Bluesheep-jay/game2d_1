@@ -203,6 +203,10 @@ PrefabInstance:
       value: GameController
       objectReference: {fileID: 0}
     - target: {fileID: 995206834109773169, guid: d7a9bb9391ed8fa40ad122d6cd7b979d, type: 3}
+      propertyPath: nameScene
+      value: level_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 995206834109773169, guid: d7a9bb9391ed8fa40ad122d6cd7b979d, type: 3}
       propertyPath: spawnTime
       value: 1.5
       objectReference: {fileID: 0}

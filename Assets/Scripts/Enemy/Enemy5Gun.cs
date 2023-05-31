@@ -22,7 +22,7 @@ public class Enemy5Gun : MonoBehaviour
     {
         if (m_gc.GetScore() > 50)
         {
-            spawnMax = 1;
+            spawnMax = 0.8f;
             spawnMin = 0.2f;
         }
 

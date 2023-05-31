@@ -9,6 +9,7 @@ public class Level1_control : MonoBehaviour
     GameController m_gc;
     public GameObject enemy;
     LevelLoader m_load;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +22,11 @@ public class Level1_control : MonoBehaviour
         if (m_gc.GetScore() >= 100)
         {
             DestroyImmediate(GameObject.Find("Enemy(Clone)"));
-               
-            pause4Continue.SetActive(true);
 
-            //m_load.LoadNextLevel("level_02");
+            PlayerPrefs.SetInt("levelPassed", 1);
+         
+
+            pause4Continue.SetActive(true);
         }
     }
 

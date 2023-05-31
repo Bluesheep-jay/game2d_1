@@ -20,6 +20,8 @@ public class Level4_control : MonoBehaviour
         {
             DestroyImmediate(GameObject.Find("Enemy(Clone)"));
 
+            PlayerPrefs.SetInt("levelPassed", 4);
+
             pause4Continue.SetActive(true);
 
             //m_load.LoadNextLevel("level_02");

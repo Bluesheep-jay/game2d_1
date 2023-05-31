@@ -669,8 +669,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5124388012568208871, guid: 56cc1ebd5d4097048a50ca063d9bbce7, type: 3}
     - target: {fileID: 995206834109773169, guid: d7a9bb9391ed8fa40ad122d6cd7b979d, type: 3}
+      propertyPath: nameScene
+      value: level_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 995206834109773169, guid: d7a9bb9391ed8fa40ad122d6cd7b979d, type: 3}
       propertyPath: spawnTime
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 995206834109773174, guid: d7a9bb9391ed8fa40ad122d6cd7b979d, type: 3}
       propertyPath: m_RootOrder
