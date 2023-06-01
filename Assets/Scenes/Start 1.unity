@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1154.791, y: 721.8054}
+  m_AnchoredPosition: {x: 1223.9, y: -189}
   m_SizeDelta: {x: -723.9457, y: -505.5469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &75284744
@@ -713,15 +713,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1494455143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a6edc52252a95f4eb7e26da13f4d34c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0075957d393e39947b190c98643e3d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2119228341}
   animator: {fileID: 314296686}
   lines:
-  - '          In a bustling metropolis, chaos erupts as mysterious and grotesque
-    monsters suddenly materialize and descend upon the city streets. Panic spreads
-    among the populace as people scramble for safety, their origins shrouded in uncertainty.'
+  - '         As a skilled military pilot, you take to the skies with your comrades,
+    engaging in fierce aerial battles against the monstrous creatures. The sheer
+    scale and ferocity of these abominations leave you and your fellow pilots in
+    a state of shock and disbelief.'
   textSpeed: 0.05
 --- !u!1 &1724101395
 GameObject:
@@ -781,7 +782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6483abc51f8dd0b4fb17118cd5d68966, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f0de8e9caf3d084eb4eda7e7b1c65a1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -834,7 +835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0026447, y: 0.0025272}
+  m_AnchoredPosition: {x: 0.01004, y: 844}
   m_SizeDelta: {x: 2613.8, y: 971.38}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119228341
@@ -884,8 +885,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 85
-  m_fontSizeBase: 85
+  m_fontSize: 78
+  m_fontSizeBase: 78
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

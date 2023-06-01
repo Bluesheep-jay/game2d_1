@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class trailerText : MonoBehaviour
+public class trailerText1 : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public Animator animator;
@@ -72,6 +72,6 @@ public class trailerText : MonoBehaviour
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene("Start 1");
+        SceneManager.LoadScene("Start Menu");
     }
 }
