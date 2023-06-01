@@ -5,6 +5,7 @@ using UnityEngine;
 public class Level5_control : MonoBehaviour
 {
     public GameObject pause4Continue;
+    public GameObject WinPanel;
     GameController m_gc;
     LevelLoader m_load;
     // Start is called before the first frame update
@@ -24,13 +25,15 @@ public class Level5_control : MonoBehaviour
             
             PlayerPrefs.SetInt("levelPassed", 5);
 
-            pause4Continue.SetActive(true);
+            //pause4Continue.SetActive(true);
+            WinPanel.SetActive(true);
+
         }
     }
 
     public void runLevelLoader()
     {
-        m_load.LoadNextLevel("level_06");
+        m_load.LoadNextLevel("level_05");
 
     }
 }
