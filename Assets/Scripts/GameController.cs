@@ -26,7 +26,6 @@ public class GameController : MonoBehaviour
         m_spawnTime = 0;
         m_ui = FindObjectOfType<UImanage>();
         m_ui.SetScoreText("Score: " + m_score);
-
     }
 
     void Update()
@@ -53,7 +52,6 @@ public class GameController : MonoBehaviour
             SpawnEnemy();
             m_spawnTime = spawnTime;
         }
-
     }
 
     public void SpawnEnemy()
@@ -70,6 +68,11 @@ public class GameController : MonoBehaviour
     {
         SceneManager.LoadScene(nameScene);
     }
+
+    public void BackToSelection()
+    {
+        SceneManager.LoadScene("Level Selection");
+    }
     public void SetScore(int val)
     {
         m_score = val;
@@ -79,8 +82,6 @@ public class GameController : MonoBehaviour
         return m_score;
     }
 
- 
-    
     public void ScoreIncre()
     {
         if (m_isGameOver)
@@ -91,7 +92,7 @@ public class GameController : MonoBehaviour
         
         m_ui.SetScoreText("Score: " + m_score);
     }
-       public void SetGameOverState()
+    public void SetGameOverState()
     {
         m_isGameOver = true;
     }

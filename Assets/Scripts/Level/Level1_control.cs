@@ -24,8 +24,7 @@ public class Level1_control : MonoBehaviour
             DestroyImmediate(GameObject.Find("Enemy(Clone)"));
 
             PlayerPrefs.SetInt("levelPassed", 1);
-         
-
+        
             pause4Continue.SetActive(true);
         }
     }
@@ -33,7 +32,11 @@ public class Level1_control : MonoBehaviour
     public void runLevelLoader()
     {
         m_load.LoadNextLevel("level_02");
+    }
 
+    public void BackToSelection()
+    {
+        m_load.LoadNextLevel("Level Selection");
     }
 
 }

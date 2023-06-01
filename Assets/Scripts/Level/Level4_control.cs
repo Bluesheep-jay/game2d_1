@@ -31,6 +31,10 @@ public class Level4_control : MonoBehaviour
     public void runLevelLoader()
     {
         m_load.LoadNextLevel("level_05");
+    }
 
+    public void BackToSelection()
+    {
+        m_load.LoadNextLevel("Level Selection");
     }
 }

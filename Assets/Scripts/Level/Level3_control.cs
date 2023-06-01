@@ -33,4 +33,8 @@ public class Level3_control : MonoBehaviour
 
     }
 
+    public void BackToSelection()
+    {
+        m_load.LoadNextLevel("Level Selection");
+    }
 }

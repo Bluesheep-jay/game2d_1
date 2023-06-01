@@ -29,7 +29,11 @@ public class Level2_control : MonoBehaviour
     public void runLevelLoader()
     {
         m_load.LoadNextLevel("level_03");
+    }
 
+    public void BackToSelection()
+    {
+        m_load.LoadNextLevel("Level Selection");
     }
 
 }
