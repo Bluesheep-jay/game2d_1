@@ -838,11 +838,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259401316613, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259401316613, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259401316613, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
@@ -854,11 +854,11 @@ PrefabInstance:
       objectReference: {fileID: 5768671280450016671, guid: 19c37fd9c6726764da035a76ccfe7b4f, type: 3}
     - target: {fileID: 3399169259414758776, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259414758776, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259414758776, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
@@ -866,23 +866,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259541749469, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399169259541749469, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
-      propertyPath: spawnMin
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259541749469, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
+      propertyPath: spawnMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399169259541749469, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259554351161, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259554351161, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259554351161, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
@@ -902,23 +902,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259705660661, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3399169259705660661, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
-      propertyPath: spawnMin
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259705660661, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
+      propertyPath: spawnMin
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3399169259705660661, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259792704552, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259792704552, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259792704552, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
@@ -926,11 +926,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259793044835, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259793044835, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259793044835, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
@@ -962,11 +962,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259988746498, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259988746498, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3399169259988746498, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
@@ -974,11 +974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399169260149367791, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169260149367791, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3399169260149367791, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
@@ -1022,11 +1022,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399169260503513425, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMax
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3399169260503513425, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: spawnMin
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3399169260503513425, guid: 75fb9dab7c50c804eb223e6c3cdb62a9, type: 3}
       propertyPath: m_Enabled
